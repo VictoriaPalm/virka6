@@ -5,8 +5,7 @@ using DIKUArcade.GUI;
 using DIKUArcade.Input;
 public class Game : DIKUGame {
     public Game(WindowArgs windowArgs) : base(windowArgs) {
-        // TODO: Set key event handler (inherited window field of DIKUGame class)
-
+        // TODO
     }
 
     public override void Render(WindowContext context) {
