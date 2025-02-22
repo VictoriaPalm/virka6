@@ -20,12 +20,10 @@ public class Enemy : Entity {
     public void DeleteWithExplosion() {
         if (eventBus != null) { // Hanldes null reference warning
             eventBus.RegisterEvent(
-                new AddExplosionEvent(
-                    Shape.Position,
-                    Shape.Extent
-                )
+                new AddExplosionEvent(Shape.Position, Shape.Extent)
             );
         }
+        
         DeleteEntity();
     }
 }

@@ -53,7 +53,6 @@ public class Player : Entity {
         
         // Keeps player inside the game window 5.2.2
         newX = Math.Clamp(newX, 0.0f, 1.0f - dynamicShape.Extent.X);
-        
         dynamicShape.Position = new Vector2(newX, dynamicShape.Position.Y);
     }
 

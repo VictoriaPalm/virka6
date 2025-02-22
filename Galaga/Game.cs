@@ -24,7 +24,7 @@ public class Game : DIKUGame {
     public Game(WindowArgs windowArgs) : base(windowArgs) {
     player = new Player(
         new DynamicShape(new Vector2(0.45f, 0.1f),
-            new Vector2(0.1f, 0.1f)),
+                         new Vector2(0.1f, 0.1f)),
         new Image("Galaga.Assets.Images.Player.png"));
 
     // Creates image strides for enemy animation 5.2.3 (copied)
@@ -39,14 +39,13 @@ public class Game : DIKUGame {
     gameEventBus = new GameEventBus();
     gameEventBus.Subscribe<AddExplosionEvent>(AddExplosion);
     enemyExplosions = new AnimationContainer(numEnemies);
-    explosionStrides = ImageStride.CreateStrides(8, 
-        "Galaga.Assets.Images.Explosion.png");
+    explosionStrides = ImageStride.CreateStrides(8, "Galaga.Assets.Images.Explosion.png");
 
     // Creates enemies across the top of the screen 5.2.3 (copied)
     for (int i = 0; i < numEnemies; i++) {
         var enemy = new Enemy(
-            new DynamicShape(new Vector2(0.1f + (float)i * 0.1f, 0.9f),
-                new Vector2(0.1f, 0.1f)),
+            new DynamicShape(new Vector2(0.1f + (float)i * 0.1f, 0.9f), 
+                             new Vector2(0.1f, 0.1f)),
             new ImageStride(80, images));
         enemy.SetGameEventBus(gameEventBus);
         enemies.AddEntity(enemy);
