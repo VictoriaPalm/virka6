@@ -21,6 +21,11 @@ public class Player : Entity {
         moveRight = 0.0f;
     }
 
+    // Returns the player's current position 5.2.4
+    public Vector2 GetPosition() {
+        return Shape.Position;
+    }
+    
     // Decides movement to the left 5.2.2
     public void SetMoveLeft(bool move) {
         // Moves left if true, stops if false 5.2.2
