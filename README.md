@@ -6,7 +6,7 @@ Victoria Palm Christensen (jlh252)
 https://github.com/DIKU-SU/a4-team-3-group-1
 
 Running Galaga:
-Navigate to "../a4-team-3-group-1/Galaga"
+Navigate to "../Veronika-Victoria-AgnesWenzel_A4/Galaga"
 Build the project: dotnet build
 Run the game: dotnet run
 
@@ -22,3 +22,6 @@ Shoot: Spacebar ( )
 
 Exiting the Game:
 Press x in the upper left corner of the tab to exit the game.
+
+Testing Galaga:
+To test the program: dotnet test 
