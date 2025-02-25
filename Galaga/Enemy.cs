@@ -2,23 +2,23 @@ namespace Galaga;
 
 using DIKUArcade.Entities;
 using DIKUArcade.Graphics;
-using DIKUArcade.Events; // Added for access 5.3
+using DIKUArcade.Events;
 
 public class Enemy : Entity {
-    // Field to hold reference to game event bus
-    private GameEventBus? eventBus; // Null reference handling
+    // Field to store reference to the game's event system
+    private GameEventBus? eventBus;
 
     public Enemy(DynamicShape shape, IBaseImage image) : base(shape, image) {
     }
 
-    // Method to set the event bus reference
+    // Sets the event bus for this enemy
     public void SetGameEventBus(GameEventBus bus) {
         eventBus = bus;
     }
 
-    // Method to handle enemy deletion with explosion
+    // Creates explosion and removes enemy
     public void DeleteWithExplosion() {
-        if (eventBus != null) { // Hanldes null reference warning
+        if (eventBus != null) {
             eventBus.RegisterEvent(
                 new AddExplosionEvent(Shape.Position, Shape.Extent)
             );
