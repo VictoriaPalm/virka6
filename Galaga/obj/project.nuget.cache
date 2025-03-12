@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "LrYYlI69hwY=",
+  "dgSpecHash": "BIKVbRSiodI=",
   "success": true,
-  "projectFilePath": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj",
+  "projectFilePath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
   "expectedPackageFiles": [
-    "/Users/veron_000/.nuget/packages/diku.canvas/2.1.0-alpha1/diku.canvas.2.1.0-alpha1.nupkg.sha512",
-    "/Users/veron_000/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
-    "/Users/veron_000/.nuget/packages/sixlabors.fonts/2.0.4/sixlabors.fonts.2.0.4.nupkg.sha512",
-    "/Users/veron_000/.nuget/packages/sixlabors.imagesharp/3.1.5/sixlabors.imagesharp.3.1.5.nupkg.sha512",
-    "/Users/veron_000/.nuget/packages/sixlabors.imagesharp.drawing/2.1.4/sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512"
+    "/Users/agneswenzelostergaard/.nuget/packages/diku.canvas/2.1.0-alpha1/diku.canvas.2.1.0-alpha1.nupkg.sha512",
+    "/Users/agneswenzelostergaard/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
+    "/Users/agneswenzelostergaard/.nuget/packages/sixlabors.fonts/2.0.4/sixlabors.fonts.2.0.4.nupkg.sha512",
+    "/Users/agneswenzelostergaard/.nuget/packages/sixlabors.imagesharp/3.1.5/sixlabors.imagesharp.3.1.5.nupkg.sha512",
+    "/Users/agneswenzelostergaard/.nuget/packages/sixlabors.imagesharp.drawing/2.1.4/sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512"
   ],
   "logs": []
 }

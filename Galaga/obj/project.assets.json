@@ -293,19 +293,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/veron_000/.nuget/packages/": {}
+    "/Users/agneswenzelostergaard/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj",
+      "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
       "projectName": "Galaga",
-      "projectPath": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj",
-      "packagesPath": "/Users/veron_000/.nuget/packages/",
-      "outputPath": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/obj/",
+      "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
+      "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+      "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/veron_000/.nuget/NuGet/NuGet.Config"
+        "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -317,8 +317,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
-              "projectPath": "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
+            "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
+              "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
             }
           }
         }
@@ -332,7 +332,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net7.0": {
@@ -353,7 +354,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

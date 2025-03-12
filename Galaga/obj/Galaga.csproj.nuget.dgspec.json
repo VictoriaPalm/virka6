@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj": {}
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj": {}
   },
   "projects": {
-    "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
+        "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
         "projectName": "DIKUArcade",
-        "projectPath": "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
-        "packagesPath": "/Users/veron_000/.nuget/packages/",
-        "outputPath": "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/obj/",
+        "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
+        "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+        "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/NuGet.Config",
-          "/Users/veron_000/.nuget/NuGet/NuGet.Config"
+          "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/NuGet.Config",
+          "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/local-nuget": {},
+          "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/local-nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +39,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -66,21 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj": {
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj",
+        "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
         "projectName": "Galaga",
-        "projectPath": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/Galaga.csproj",
-        "packagesPath": "/Users/veron_000/.nuget/packages/",
-        "outputPath": "/Users/veron_000/Desktop/a4-team-3-group-1/Galaga/obj/",
+        "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
+        "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+        "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/veron_000/.nuget/NuGet/NuGet.Config"
+          "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -92,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
-                "projectPath": "/Users/veron_000/Desktop/a4-team-3-group-1/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
+              "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
+                "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
               }
             }
           }
@@ -107,7 +108,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -128,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

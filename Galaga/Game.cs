@@ -9,6 +9,9 @@ using DIKUArcade.Physics;
 using System.Numerics;
 using System.Collections.Generic;
 using DIKUArcade.Events;
+using Galaga.Squadron;
+using Galaga.Movement;
+using Galaga.Hit;
 
 public class Game : DIKUGame {
     // Game entities
@@ -16,12 +19,21 @@ public class Game : DIKUGame {
     private EntityContainer<Enemy> enemies;
     private EntityContainer<PlayerShot> playerShots;
     private IBaseImage playerShotImage;
-    
+
     // Explosion handling components
     private GameEventBus gameEventBus;
     private AnimationContainer enemyExplosions;
     private List<Image> explosionStrides;
     private const int EXPLOSION_LENGTH_MS = 500;
+
+    // Squadron handling
+    private ISquadron[] squadrons; // Array of different formations
+    private int currentSquadronIndex;
+    private ISquadron squadron;
+
+    // Enemy graphics
+    private List<Image> enemyStrides;
+    private List<Image> enragedStrides;
 
     public Game(WindowArgs windowArgs) : base(windowArgs) {
         // Creates player at the bottom center of the screen
@@ -30,29 +42,26 @@ public class Game : DIKUGame {
                              new Vector2(0.1f, 0.1f)),
             new Image("Galaga.Assets.Images.Player.png"));
 
-        // Loads enemy animation frames
-        List<Image> images =
-            ImageStride.CreateStrides(4, "Galaga.Assets.Images.BlueMonster.png");
-        
-        // Creates enemy container
-        const int numEnemies = 8;
-        enemies = new EntityContainer<Enemy>(numEnemies);
+        // Load enemy animation frames
+        enemyStrides = ImageStride.CreateStrides(4, "Galaga.Assets.Images.BlueMonster.png");
+        enragedStrides = ImageStride.CreateStrides(4, "Galaga.Assets.Images.RedMonster.png");
+
+        // Setup available squadron formations
+        squadrons = new ISquadron[] {
+            new VFormationSquadron(),
+            new LineFormationSquadron(),
+            new CircleFormationSquadron()
+        };
+        currentSquadronIndex = 0;
 
         // Setup explosion system
         gameEventBus = new GameEventBus();
         gameEventBus.Subscribe<AddExplosionEvent>(AddExplosion);
-        enemyExplosions = new AnimationContainer(numEnemies);
+        enemyExplosions = new AnimationContainer(10);
         explosionStrides = ImageStride.CreateStrides(8, "Galaga.Assets.Images.Explosion.png");
 
-        // Creates row of enemies at the top of the screen
-        for (int i = 0; i < numEnemies; i++) {
-            var enemy = new Enemy(
-                new DynamicShape(new Vector2(0.1f + (float)i * 0.1f, 0.9f), 
-                                 new Vector2(0.1f, 0.1f)),
-                new ImageStride(80, images));
-            enemy.SetGameEventBus(gameEventBus);
-            enemies.AddEntity(enemy);
-        }
+        // Create initial squadron formation
+        ChangeSquadron();
 
         // Setup player shooting
         playerShots = new EntityContainer<PlayerShot>();
@@ -64,12 +73,26 @@ public class Game : DIKUGame {
         gameEventBus.Unsubscribe<AddExplosionEvent>(AddExplosion);
     }
 
+    // Change squadron formation
+    private void ChangeSquadron() {
+        currentSquadronIndex = (currentSquadronIndex + 1) % squadrons.Length;
+        squadron = squadrons[currentSquadronIndex];
+
+        // Create new enemies based on squadron formation
+        enemies = squadron.CreateEnemies(
+            enemyStrides,
+            enragedStrides,
+            () => new NoMoveStrategy(),
+            () => new BasicHitStrategy()
+        );
+    }
+
     // Handles movement, collisions and shots
     private void IterateShots() {
         playerShots.Iterate(shot => {
             // Move shot upward
             shot.Shape.Move();
-            
+
             // Removes shot if it goes off screen
             if (shot.Shape.Position.Y > 1.0f) {
                 shot.DeleteEntity();
@@ -80,7 +103,7 @@ public class Game : DIKUGame {
                         shot.Shape.AsDynamicShape(),
                         enemy.Shape
                     );
-                    
+
                     // Handles collision
                     if (collision.Collision) {
                         shot.DeleteEntity();
@@ -90,7 +113,7 @@ public class Game : DIKUGame {
             }
         });
     }
-   
+
     // Renders all game elements
     public override void Render(WindowContext context) {
         window.Clear();
@@ -117,18 +140,23 @@ public class Game : DIKUGame {
 
     // Handles keyboard input
     public override void KeyHandler(KeyboardAction action, KeyboardKey key) {
-        // Forwards movement keys to player
+        // Forward movement keys to player
         player.KeyHandler(action, key);
-        
+
         // Creates shot when Space is released
         if (action == KeyboardAction.KeyRelease && key == KeyboardKey.Space) {
-            // Positions shot at top center of player
+            // Position shot at top center of player
             Vector2 playerPos = player.GetPosition();
             Vector2 shotPos = new Vector2(
-                playerPos.X + player.Shape.Extent.X/2f,
+                playerPos.X + player.Shape.Extent.X / 2f,
                 playerPos.Y + player.Shape.Extent.Y
             );
             playerShots.AddEntity(new PlayerShot(shotPos, playerShotImage));
+        }
+
+        // Switch squadron formation when 'S' is pressed
+        if (action == KeyboardAction.KeyPress && key == KeyboardKey.S) {
+            ChangeSquadron();
         }
     }
 }
