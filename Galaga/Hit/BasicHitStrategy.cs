@@ -1,6 +1,6 @@
 namespace Galaga.Hit {
     public class BasicHitStrategy : IHitStrategy {
-        public void Hit(Enemy enemy) { // 🚀 Skiftet fra HandleHit til Hit
+        public void Hit(Enemy enemy) { 
             enemy.DeleteEntity();
         }
     }

@@ -50,6 +50,20 @@ public class Player : Entity {
         dynamicShape.Position = new Vector2(newX, dynamicShape.Position.Y);
     }
 
+    // Allows the player to shoot bullets
+    public void Shoot(EntityContainer<PlayerShot> shots, IBaseImage shotImage) {
+        var shotPosition = new Vector2(Shape.Position.X + (Shape.Extent.X / 2) - 0.004f, 
+                                    Shape.Position.Y + Shape.Extent.Y);
+        
+        var shot = new PlayerShot(shotPosition, shotImage);
+
+        shots.AddEntity(shot);
+    }
+
+
+
+
+
     // Processes keyboard input
     public void KeyHandler(KeyboardAction action, KeyboardKey key) {
         switch (key) {
