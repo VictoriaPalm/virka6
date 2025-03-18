@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/GalagaTests/GalagaTests.csproj": {}
+  },
+  "projects": {
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
+        "projectName": "DIKUArcade",
+        "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj",
+        "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+        "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/NuGet.Config",
+          "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/local-nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "DIKU.Canvas": {
+              "target": "Package",
+              "version": "[2.1.0-alpha1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
+        "projectName": "Galaga",
+        "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
+        "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+        "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
+                "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/GalagaTests/GalagaTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/GalagaTests/GalagaTests.csproj",
+        "projectName": "GalagaTests",
+        "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/GalagaTests/GalagaTests.csproj",
+        "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
+        "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/GalagaTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj": {
+                "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

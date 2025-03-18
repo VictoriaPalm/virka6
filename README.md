@@ -1,12 +1,24 @@
-Contributers:
-Veronika Reusch (vml778)
-Agnes Wenzel Østergaard (ctm411)
-Victoria Palm Christensen (jlh252)
+# SU-A3-StudentTemplate
+Template for assignment 6 in the course Software Development.
 
-https://github.com/DIKU-SU/a4-team-3-group-1
+## Student Information
+- **Name**: Agnes Wenzel Østergaard
+- **KU ID**: ctm411
+- **GitHub Repository**: git@github.com:DIKU-SU/a6-ctm411.git
+
+
+## How to build the project
+- dotnet build BinarySearch/Library/Library.csproj
+
+## How to run TUI project
+- dotnet run --project BinarySearch/TUI/TUI.csproj
+
+## How to run the test
+- dotnet test BinarySearch/Tests/Tests.csproj
+
 
 Running Galaga:
-Navigate to "../Veronika-Victoria-AgnesWenzel_A4/Galaga"
+Navigate to "../AgnesWenzel-A6/Galaga"
 Build the project: dotnet build
 Run the game: dotnet run
 
@@ -19,6 +31,9 @@ Controls:
 Move left: Left arrow key (←)
 Move right: Right arrow key (→)
 Shoot: Spacebar ( )
+
+Switch in different implementations of Squadron:
+Press key "S"
 
 Exiting the Game:
 Press x in the upper left corner of the tab to exit the game.
