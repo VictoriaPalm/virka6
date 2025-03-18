@@ -293,19 +293,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/agneswenzelostergaard/.nuget/packages/": {}
+    "C:\\Users\\Victoria\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
+      "projectUniqueName": "C:\\Users\\Victoria\\Desktop\\skole\\Datalogi\\SU\\virka6\\Galaga\\Galaga.csproj",
       "projectName": "Galaga",
-      "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/Galaga.csproj",
-      "packagesPath": "/Users/agneswenzelostergaard/.nuget/packages/",
-      "outputPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/Galaga/obj/",
+      "projectPath": "C:\\Users\\Victoria\\Desktop\\skole\\Datalogi\\SU\\virka6\\Galaga\\Galaga.csproj",
+      "packagesPath": "C:\\Users\\Victoria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victoria\\Desktop\\skole\\Datalogi\\SU\\virka6\\Galaga\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/agneswenzelostergaard/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Victoria\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -317,8 +317,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj": {
-              "projectPath": "/Users/agneswenzelostergaard/Desktop/DATALOGI/SU/Assignment 6/a6-ctm411/DIKUArcade/DIKUArcade/DIKUArcade.csproj"
+            "C:\\Users\\Victoria\\Desktop\\skole\\Datalogi\\SU\\virka6\\DIKUArcade\\DIKUArcade\\DIKUArcade.csproj": {
+              "projectPath": "C:\\Users\\Victoria\\Desktop\\skole\\Datalogi\\SU\\virka6\\DIKUArcade\\DIKUArcade\\DIKUArcade.csproj"
             }
           }
         }
@@ -332,8 +332,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net7.0": {
@@ -354,7 +353,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
